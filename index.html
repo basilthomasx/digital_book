@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pick Your Process: A Short Book on Software Process Models</title>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Archivo:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<div class="wrap">
+  <div class="top"><span><b>MCA401-2 Software Engineering</b></span><div><span id="pn">Page 1 of 5</span><button class="theme" id="theme" aria-label="Switch light or dark theme">Theme</button></div></div>
+  <main class="book">
+
+  <section class="page cover on" id="p1">
+    <span class="dot" style="width:260px;height:260px;right:-80px;bottom:-90px"></span><span class="dot" style="width:120px;height:120px;left:40%;top:-40px"></span>
+    <svg class="bug" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M96 40a44 44 0 0 0-76 8"/><path d="M12 38l8 10 12-6"/><path d="M24 80a44 44 0 0 0 76-8"/><path d="M108 82l-8-10-12 6"/></g><circle cx="60" cy="60" r="20" fill="#f59e0b"/><path d="M52 60l6 7 11-13" fill="none" stroke="#1e1b4b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <h1>Pick Your Process</h1>
+    <p class="sub">A short book on software process models, from the generic framework to Waterfall, RAD, DevOps and Scrum.</p>
+    <div class="meta">
+      <div class="nm">Basil Thomas</div>
+      <div>Roll no. 26225009</div>
+      <div>School of Sciences</div>
+      <div>Dr. Vandana Mehndiratta</div>
+    </div>
+  </section>
+
+  <section class="page" id="p2">
+    <div class="chap"><i>🧭</i><div><small>Chapter 1</small><h2>The generic process model</h2></div></div>
+    <p>A software process is a collection of activities, actions and tasks performed to create a work product. Pressman describes a generic process model built around five framework activities that apply to almost every project, large or small <cite>[1]</cite>.</p>
+    <h3>Five framework activities</h3>
+    <div class="chips" id="acts" role="group" aria-label="Framework activities"><button class="chip" data-k="0">1 Communication</button><button class="chip" data-k="1">2 Planning</button><button class="chip" data-k="2">3 Modeling</button><button class="chip" data-k="3">4 Construction</button><button class="chip" data-k="4">5 Deployment</button></div>
+    <div class="panel" id="actinfo" aria-live="polite">Tap an activity to see what happens in it.</div>
+    <h3>Actions, task sets and umbrella activities</h3>
+    <p>Each framework activity contains one or more <b>actions</b> (for example, elicitation inside communication), and each action has a <b>task set</b>: the work tasks, work products, quality assurance points and project milestones needed for it. The task set is adapted to the size and risk of the project <cite>[1]</cite>.</p>
+    <p>Umbrella activities run across the whole process. They include project tracking and control, risk management, software quality assurance, technical reviews, measurement and configuration management <cite>[1]</cite>.</p>
+    <div class="box"><p>The process flow can be linear, iterative, evolutionary or parallel. Choosing among these flows is what separates the different process models <cite>[1]</cite>.</p></div>
+  </section>
+
+  <section class="page" id="p3">
+    <div class="chap"><i>🧱</i><div><small>Chapter 2</small><h2>Prescriptive process models</h2></div></div>
+    <p>Prescriptive models define a set of activities and their order, and each one suits a different kind of project <cite>[1]</cite><cite>[2]</cite>.</p>
+    <div class="scroll"><table>
+      <tr><th>Model</th><th>Idea</th><th>Good when</th></tr>
+      <tr><td>Waterfall</td><td>Linear: communication, planning, modeling, construction, deployment</td><td>Requirements are fixed and well understood</td></tr>
+      <tr><td>Incremental</td><td>Deliver working increments, core first</td><td>Early delivery matters, staff is limited</td></tr>
+      <tr><td>Prototyping</td><td>Build a quick mock-up, refine with feedback</td><td>Requirements are vague</td></tr>
+      <tr><td>Spiral</td><td>Evolutionary cycles driven by risk analysis</td><td>The project is large and risky</td></tr>
+    </table></div>
+    <div class="box"><p><b>Try it.</b> Choose a project situation to see which model fits best.</p>
+      <div class="tool"><label for="scn">Situation</label>
+      <select class="sel" id="scn"><option value="">Select one…</option><option value="w">Requirements are stable and clearly documented</option><option value="i">Customer wants core features quickly, the rest later</option><option value="p">Customer cannot describe what they want</option><option value="s">Large system with serious technical and business risks</option></select></div>
+      <div class="panel" id="scninfo" aria-live="polite">The suggested model appears here.</div>
+    </div>
+    <p class="note">These are textbook guidelines. Real projects often mix models or tailor them <cite>[1]</cite>.</p>
+  </section>
+
+  <section class="page" id="p4">
+    <div class="chap"><i>⚡</i><div><small>Chapter 3</small><h2>RAD, DevOps and Scrum</h2></div></div>
+    <p>Specialized and agile approaches trade some ceremony for speed and feedback <cite>[1]</cite><cite>[2]</cite>.</p>
+    <div class="three">
+      <div><b>RAD</b>A very short incremental cycle, often 60 to 90 days, using component-based construction and parallel teams. It needs modular systems and enough people <cite>[1]</cite>.</div>
+      <div><b>DevOps</b>Joins development and operations so that building, integrating, deploying and collecting feedback form a continuous loop <cite>[1]</cite><cite>[4]</cite>.</div>
+      <div><b>Scrum</b>An agile framework that delivers work in short timeboxed sprints, with three roles: Product Owner, Scrum Master and Developers <cite>[3]</cite>.</div>
+    </div>
+    <h3>One Scrum sprint</h3>
+    <div class="chips" id="scrum" role="group" aria-label="Scrum events"><button class="chip" data-k="0">Product Backlog</button><button class="chip" data-k="1">Sprint Planning</button><button class="chip" data-k="2">Daily Scrum</button><button class="chip" data-k="3">Sprint Review</button><button class="chip" data-k="4">Retrospective</button></div>
+    <div class="panel" id="scrinfo" aria-live="polite">Tap a step to follow one sprint. The cycle then repeats.</div>
+    <p>Scrum follows the values of the Agile Manifesto, such as working software over comprehensive documentation and responding to change over following a plan <cite>[5]</cite>.</p>
+  </section>
+
+  <section class="page" id="p5">
+    <div class="chap"><i>✅</i><div><small>Chapter 4</small><h2>Summary and references</h2></div></div>
+    <p>Every process, however different it looks, rests on the same five framework activities and the same umbrella activities. Prescriptive models fix the order of work, so they suit stable requirements. RAD, DevOps and Scrum shorten the cycle and bring the customer and operations into the loop. The skill is matching the model to the project.</p>
+    <div class="box"><p><b>Quick check.</b> A client cannot describe the requirements clearly, but can react to something they can see and use. Which model fits best?</p>
+      <div class="chips" id="quiz"><button class="chip" data-a="0">Waterfall</button><button class="chip" data-a="1">Prototyping</button><button class="chip" data-a="2">Big-bang release</button><button class="chip" data-a="3">None needed</button></div>
+      <div class="fb" id="qfb" aria-live="polite"></div></div>
+    <h3>References</h3>
+    <ol class="refs">
+      <li>[1] Pressman, R. S. (2019). <i>Software Engineering: A Practitioner’s Approach</i> (8th ed., Indian ed.). McGraw Hill Education.</li>
+      <li>[2] Sommerville, I. (2011). <i>Software Engineering</i> (9th ed.). Addison-Wesley.</li>
+      <li>[3] Schwaber, K., &amp; Sutherland, J. (2020). <i>The Scrum Guide</i>. scrumguides.org.</li>
+      <li>[4] Kim, G., Humble, J., Debois, P., &amp; Willis, J. (2016). <i>The DevOps Handbook</i>. IT Revolution Press.</li>
+      <li>[5] Beck, K., et al. (2001). <i>Manifesto for Agile Software Development</i>. agilemanifesto.org.</li>
+    </ol>
+    <p class="note">Created with the help of an AI tool (Claude, Anthropic) and reviewed against the course syllabus by the author.</p>
+  </section>
+  </main>
+</div>
+
+<nav class="nav" aria-label="Book navigation">
+  <button class="b" id="prev">Previous</button>
+  <div class="dots" id="dots"></div>
+  <button class="b" id="next">Next</button>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
